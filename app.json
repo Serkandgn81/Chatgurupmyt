@@ -8,9 +8,9 @@
     "plugins",
     "telegram-Mention",
   ],
-  "repository": "https://github.com/Mahoaga06/Tag-members",
-  "website": "https://github.com/Mahoaga06/Tag-members", 
-  "success_url": "t.me/TaliaSupport",
+  "repository": "https://github.com/Meyit47/MytGrupBot",
+  "website": "https://github.com/Meyit47/MytGrupBot", 
+  "success_url": "t.me/S1F1RB1RCHAT",
   "env": {
     "ENV": {
       "description": "Bunu HERHANGİ BİR ŞEY, olarak ayarlamak heroku'yu etkinleştirir.",
