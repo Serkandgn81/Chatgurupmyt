@@ -1,5 +1,5 @@
 import os, logging, asyncio
-from Plugins import Meyit47
+from Plugins import Maho
 from telethon import events, Button
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
@@ -21,7 +21,7 @@ async def chatid(event):
       grup_sayi.append(event.chat_id)     
 
      
-@Meyit47.on(events.NewMessage(pattern='^/stats ?(.*)'))
+@Maho.on(events.NewMessage(pattern='^/stats ?(.*)'))
 async def son_durum(event):
     global grup_sayi,ozel_list
     sender = await event.get_sender()
@@ -30,7 +30,7 @@ async def son_durum(event):
     await event.respond(f"**Genel grup sayısı 🧐**\n\nToplam Grup: `{len(grup_sayi)}`")
 
 
-@Meyit47.on(events.NewMessage(pattern='^/gcast ?(.*)'))
+@Maho.on(events.NewMessage(pattern='^/gcast ?(.*)'))
 async def gcast(event): 
   global grup_sayi,ozel_list
   sender = await event.get_sender()
@@ -40,7 +40,7 @@ async def gcast(event):
   await event.respond(f"Toplam {len(grup_sayi)} Grublara reklam gönderiliyor...")
   for x in grup_sayi:
     try:
-      await Meyit47.send_message(x,f"**📣 @Meyit47 **\n\n{reply.message}")
+      await Maho.send_message(x,f"**📣 @Mahoaga **\n\n{reply.message}")
     except:
       pass
   await event.respond(f"Reklam gönderildi.")
