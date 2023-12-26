@@ -12,7 +12,7 @@ anlik_calisan = []
 rxyzdev_tagTot = {}
 rxyzdev_initT = {}
 
-@Maho.on(events.NewMessage(pattern="^/cancel$"))
+@Maho.on(events.NewMessage(pattern="^/tagson$"))
 async def cancel_spam(event):
   if not event.chat_id in anlik_calisan:
     return
