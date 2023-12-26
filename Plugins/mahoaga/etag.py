@@ -1,7 +1,7 @@
 # Emojiler ile sade ve şık etiketleme işlemi 🤫
 
 import os, logging, asyncio
-from Plugins import Maho
+from Plugins import Meyit47
 from telethon import events, Button
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
@@ -14,7 +14,7 @@ anlik_calisan = []
 rxyzdev_tagTot = {}
 rxyzdev_initT = {}
 
-@Maho.on(events.NewMessage(pattern="^/tagson$"))
+@Meyit47.on(events.NewMessage(pattern="^/tagson$"))
 async def cancel_spam(event):
   if not event.chat_id in anlik_calisan:
     return
@@ -26,14 +26,14 @@ async def cancel_spam(event):
     return await event.respond('✅ Etiket işlemi başarıyla durduruldu.')
 
 # Emoji tag komutu. 
-@Maho.on(events.NewMessage(pattern="^/etag ?(.*)"))
+@Meyit47.on(events.NewMessage(pattern="^/etag ?(.*)"))
 async def mentionall(event):
   rxyzdev_tagTot[event.chat_id] = 0
   if event.is_private:
     return await event.respond("Bu komutu sadece grup veya kanallarda kullanabilirsiniz.")
   
   admins = []
-  async for admin in Maho.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
+  async for admin in Meyit47.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
     return await event.respond("**Bu komutu sadece yöneticiler kullanabilir.**")
@@ -57,14 +57,14 @@ async def mentionall(event):
     usrtxt = ""
     await event.respond("**✅ Etiket işlemi başladı.**")
         
-    async for x in Maho.iter_participants(event.chat_id, aggressive=False):
+    async for x in Meyit47.iter_participants(event.chat_id, aggressive=False):
       rxyzdev_tagTot[event.chat_id] += 1
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={x.id}),"
       if event.chat_id not in anlik_calisan:
         return
       if usrnum == 6:
-        await Maho.send_message(event.chat_id, f"📢 ~ **{msg}**\n{usrtxt}")
+        await Meyit47.send_message(event.chat_id, f"📢 ~ **{msg}**\n{usrtxt}")
         await asyncio.sleep(3)
         usrnum = 0
         usrtxt = ""
@@ -81,14 +81,14 @@ async def mentionall(event):
  
     usrnum = 0
     usrtxt = ""
-    async for x in Maho.iter_participants(event.chat_id, aggressive=False):
+    async for x in Meyit47.iter_participants(event.chat_id, aggressive=False):
       rxyzdev_tagTot[event.chat_id] += 1
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={x.id})"
       if event.chat_id not in anlik_calisan:
         return
       if usrnum == 6:
-        await Maho.send_message(event.chat_id, usrtxt, reply_to=msg)
+        await Meyit47.send_message(event.chat_id, usrtxt, reply_to=msg)
         await asyncio.sleep(3)
         usrnum = 0
         usrtxt = ""
