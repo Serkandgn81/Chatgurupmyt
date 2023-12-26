@@ -2,7 +2,7 @@ import glob
 from pathlib import Path
 from Plugins.utils import load_mahoaga
 import logging
-from Plugins import Meyit47
+from Plugins import Maho
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.INFO)
@@ -16,7 +16,7 @@ for name in files:
         load_mahoaga(plugin_name.replace(".py", ""))
     
 print("Bot başarıyla başlatıldı!")
-print("Kanal ziyareti @MytGrupBotLog")
+print("Kanal ziyareti @TaliaSupport")
 
 if __name__ == "__main__":
-    Meyit47.run_until_disconnected()
+    Maho.run_until_disconnected()
