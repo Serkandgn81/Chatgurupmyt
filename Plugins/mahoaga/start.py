@@ -6,7 +6,7 @@ from Plugins import Maho
 from telethon import events, Button
 from telethon.tl.types import ChannelParticipantsAdmins
 
-@Maho.on(events.NewMessage(pattern="^/start$"))
+@Maho.on(events.NewMessage(pattern="^/bsbs$"))
 async def start(event):
   if event.is_private:
     async for usr in Maho.iter_participants(event.chat_id):
@@ -29,7 +29,7 @@ async def start(event):
     return await Maho.send_message(event.chat_id, f"**Beni Grubuna Aldığın için Teşekkürler ✨**")
 
 # Başlanğıc Button
-@Maho.on(events.callbackquery.CallbackQuery(data="start"))
+@Maho.on(events.callbackquery.CallbackQuery(data="bsbs"))
 async def handler(event):
     async for usr in Maho.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
@@ -52,7 +52,7 @@ async def handler(event):
 async def handler(event):
     await event.edit(f"**Komutlarım:\n\n/tag Toplu etiket atar..\n/yt Sadece yöneticileri etiketlemek içindir.\n/ttag Tek tek etiketleme yapar.\n/btag Bayraklar ile etiketlemek içindir.\n/stag Sözler ile etiketler.\n/itag İsimler ile etiketlemek içindir.\n/futbol Futbolcu isimleri ile etiketleme.\n/etag Emojiler ile etiketleme işlemidir.\n/cancel - Sonlandırır... \n\n❗ Yalnızca yöneticiler bu komutları kullanabilir.**", buttons=(
                       [
-                      Button.inline("♻️ Geri", data="start")
+                      Button.inline("♻️ Geri", data="bsbs")
                       ]
                     ),
                     link_preview=False)
