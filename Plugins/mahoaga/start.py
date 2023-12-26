@@ -15,11 +15,11 @@ async def start(event):
                        Button.inline("Komutlar", data="komutlar")
                       ],
                       [
-                       Button.url('↘️ Gruba Ekle', 'http://t.me/Sensizolmaz_bot?startgroup=a'),
-                       Button.url('📣 Kanal', 'https://t.me/TaliaSupport')
+                       Button.url('➕ GRUBUNA EKLE', 'http://t.me/MytGrupBot?startgroup=a'),
+                       Button.url('💬 CHAT', 'https://t.me/S1F1RB1RCHAT')
                       ],
                       [
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Mahoaga')
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/Meyit47')
                       ],
                     ),
                     link_preview=False)
@@ -38,11 +38,11 @@ async def handler(event):
                        Button.inline("Komutlar", data="komutlar")
                       ],
                       [
-                       Button.url('↘️ Gruba Ekle', 'http://t.me/Sensizolmaz_bot?startgroup=a'),
-                       Button.url('📣 Kanal', 'https://t.me/TaliaSupport')
+                       Button.url('🔳 GRUBUNA EKLE', 'http://t.me/MytGrupBot?startgroup=a'),
+                       Button.url('💬 CHAT', 'https://t.me/S1F1RB1RCHAT')
                       ],
                       [
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Mahoaga')
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/Meyit47')
                       ],
                     ),
                     link_preview=False)
@@ -52,7 +52,7 @@ async def handler(event):
 async def handler(event):
     await event.edit(f"**Komutlarım:\n\n/tag Toplu etiket atar..\n/yt Sadece yöneticileri etiketlemek içindir.\n/ttag Tek tek etiketleme yapar.\n/btag Bayraklar ile etiketlemek içindir.\n/stag Sözler ile etiketler.\n/itag İsimler ile etiketlemek içindir.\n/futbol Futbolcu isimleri ile etiketleme.\n/etag Emojiler ile etiketleme işlemidir.\n/cancel - Sonlandırır... \n\n❗ Yalnızca yöneticiler bu komutları kullanabilir.**", buttons=(
                       [
-                      Button.inline("◀️ Geri", data="start")
+                      Button.inline("♻️ Geri", data="start")
                       ]
                     ),
                     link_preview=False)
