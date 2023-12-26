@@ -10,8 +10,8 @@ from telethon.tl.types import ChannelParticipantsAdmins
 async def start(event):
   if event.is_private:
     async for usr in Maho.iter_participants(event.chat_id):
-     ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await Maho.send_message(-1001986610474, f"ℹ️ **Start Veren Kullanıcı -** {ad}")
+     ad = (f"[{usr.first_name}](tg://user?id={usr.id})")
+     await Maho.send_message(-1001986610474, f"ℹ️ **Start Veren Kullanıcı -** {ad} **")
      return await event.reply(f"**Merhaba\nBenim Görevim Sizin daha Eğlenceli Zaman Geçirmenizi Sağlamaktır.\nKomutlar için Komutlar butonuna basınız.**", buttons=(
                       [
                        Button.inline("Komutlar", data="komutlar")
