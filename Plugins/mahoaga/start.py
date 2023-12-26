@@ -1,5 +1,5 @@
 # Botunu aşağıdaki link'e belirt veya configs e BOT_USERNAME şeklinde belirt keyfine göre yeğenim :) 
-# Telegram da beni bulmak için @Mahoaga die arat sizlere yardımcı olabilirim. 
+# Telegram da beni bulmak için @Meyit47 die arat sizlere yardımcı olabilirim. 
 # Sadece hobi amaçlı yapılan bir deneme projesidir. 
 
 from Plugins import Maho
@@ -11,7 +11,7 @@ async def start(event):
   if event.is_private:
     async for usr in Maho.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await Maho.send_message(-1001210894866, f"ℹ️ **Start Veren Kullanıcı -** {ad}")
+     await Maho.send_message(-1001986610474, f"ℹ️ **Start Veren Kullanıcı -** {ad}")
      return await event.reply(f"**Merhaba\nBenim Görevim Sizin daha Eğlenceli Zaman Geçirmenizi Sağlamaktır.\nKomutlar için Komutlar butonuna basınız.**", buttons=(
                       [
                        Button.inline("Komutlar", data="komutlar")
