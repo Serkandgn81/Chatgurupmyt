@@ -12,16 +12,16 @@ async def start(event):
     async for usr in Maho.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
      await Maho.send_message(-1001210894866, f"ℹ️ **Start Veren Kullanıcı -** {ad}")
-     return await event.reply(f"**Merhaba\nBenim Görevim Üyeleri Etiketlemektir.\nKomutlar için Komutlar butonuna basınız.**", buttons=(
+     return await event.reply(f"**Merhaba\nBenim Görevim Sizin daha Eğlenceli Zaman Geçirmenizi Sağlamaktır.\nKomutlar için Komutlar butonuna basınız.**", buttons=(
                       [
                        Button.inline("Komutlar", data="komutlar")
                       ],
                       [
-                       Button.url('↘️ Gruba Ekle', 'http://t.me/Sensizolmaz_bot?startgroup=a'),
-                       Button.url('📣 Kanal', 'https://t.me/TaliaSupport')
+                       Button.url('➕ Gruba Ekle', 'http://t.me/MytGrupBot?startgroup=a'),
+                       Button.url('📣 Kanal', 'https://t.me/S1F1RB1RKANAL')
                       ],
                       [
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Mahoaga')
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/Meyit47')
                       ],
                     ),
                     link_preview=False)
@@ -35,16 +35,16 @@ async def start(event):
 async def handler(event):
     async for usr in Maho.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.edit(f"**Merhaba Benim adım Tagger\nGörevim Üyeleri Etiketlemek\nKomutlar için Komutlar Düğmesine Basın.**", buttons=(
+     await event.edit(f"**Merhaba Benim adım MytGrupBot\nGörevim Sizin daha Eğlenceli Zaman Geçirmenizi Sağlamaktır.\nKomutlar için Komutlar Düğmesine Basın.**", buttons=(
                       [
                        Button.inline("Komutlar", data="komutlar")
                       ],
                       [
-                       Button.url('↘️ Gruba Ekle', 'http://t.me/Sensizolmaz_bot?startgroup=a'),
-                       Button.url('📣 Kanal', 'https://t.me/TaliaSupport')
+                       Button.url('↘️ Gruba Ekle', 'http://t.me/MytGrupBot?startgroup=a'),
+                       Button.url('📣 Kanal', 'https://t.me/S1F1RB1RKANAL')
                       ],
                       [
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Mahoaga')
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/Meyit47')
                       ],
                     ),
                     link_preview=False)
@@ -52,9 +52,9 @@ async def handler(event):
 # Maho aga
 @Maho.on(events.callbackquery.CallbackQuery(data="komutlar"))
 async def handler(event):
-    await event.edit(f"**Komutlarım:\n\n/tag Toplu etiket atar..\n/yt Sadece yöneticileri etiketlemek içindir.\n/ttag Tek tek etiketleme yapar.\n/btag Bayraklar ile etiketlemek içindir.\n/stag Sözler ile etiketler.\n/itag İsimler ile etiketlemek içindir.\n/futbol Futbolcu isimleri ile etiketleme.\n/etag Emojiler ile etiketleme işlemidir.\n/cancel - Sonlandırır... \n\n❗ Yalnızca yöneticiler bu komutları kullanabilir.**", buttons=(
+    await event.edit(f"**Komutlarım:\n\n/tag Toplu etiket atar..\n/yt Sadece yöneticileri etiketlemek içindir.\n/ttag Tek tek etiketleme yapar.\n/btag Bayraklar ile etiketlemek içindir.\n/stag Sözler ile etiketler.\n/itag İsimler ile etiketlemek içindir.\n/futbol Futbolcu isimleri ile etiketleme.\n/etag Emojiler ile etiketleme işlemidir.\n/tagson - Sonlandırır... \n\n❗ Yalnızca yöneticiler bu komutları kullanabilir.**", buttons=(
                       [
-                      Button.inline("◀️ Geri", data="start")
+                      Button.inline("◼️ Geri", data="start")
                       ]
                     ),
                     link_preview=False)
