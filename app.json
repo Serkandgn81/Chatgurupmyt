@@ -18,15 +18,15 @@
     },
     "TOKEN": {
       "description": "Bot Jetonunuz.",
-      "value": ""
+      "value": "6803669543:AAF3IVN9OQvi0DFESZSX2Nc4W2YGFBO6__c"
     },
     "APP_ID": {
       "description": "Bu değeri my.telegram.org'dan alın! Lütfen çalmayın",
-      "value": ""
+      "value": "2930013"
     },
     "API_HASH": {
       "description": "Bu değeri my.telegram.org'dan alın! Lütfen çalmayın",
-      "value": ""
+      "value": "7cab92dcd979add511b79d693775e17d"
     }
   },
   "addons": [
