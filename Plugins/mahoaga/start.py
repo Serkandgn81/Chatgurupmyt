@@ -6,7 +6,7 @@ from Plugins import Maho
 from telethon import events, Button
 from telethon.tl.types import ChannelParticipantsAdmins
 
-@Maho.on(events.NewMessage(pattern="^/bsbs$"))
+@Maho.on(events.NewMessage(pattern="^/tagkomut$"))
 async def start(event):
   if event.is_private:
     async for usr in Maho.iter_participants(event.chat_id):
@@ -33,7 +33,7 @@ async def start(event):
 async def handler(event):
     async for usr in Maho.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.edit(f"**Merhaba Benim adım Tagger\nGörevim Üyeleri Etiketlemek\nKomutlar için Komutlar Düğmesine Basın.**", buttons=(
+     await event.edit(f"**Merhaba Benim adım MytTagger\nGörevim Üyeleri Etiketlemek\nKomutlar için Komutlar Düğmesine Basın.**", buttons=(
                       [
                        Button.inline("Komutlar", data="komutlar")
                       ],
