@@ -52,7 +52,7 @@ async def handler(event):
 async def handler(event):
     await event.edit(f"**Komutlarım:\n\n/tag Toplu etiket atar..\n/yt Sadece yöneticileri etiketlemek içindir.\n/ttag Tek tek etiketleme yapar.\n/btag Bayraklar ile etiketlemek içindir.\n/stag Sözler ile etiketler.\n/itag İsimler ile etiketlemek içindir.\n/futbol Futbolcu isimleri ile etiketleme.\n/etag Emojiler ile etiketleme işlemidir.\n/cancel - Sonlandırır... \n\n❗ Yalnızca yöneticiler bu komutları kullanabilir.**", buttons=(
                       [
-                      Button.inline("♻️ Geri", data="bsbs")
+                      Button.inline("♻️ Geri", data="tagkomut")
                       ]
                     ),
                     link_preview=False)
