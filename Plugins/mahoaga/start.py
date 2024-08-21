@@ -6,7 +6,7 @@ from Plugins import Maho
 from telethon import events, Button
 from telethon.tl.types import ChannelParticipantsAdmins
 
-@Maho.on(events.NewMessage(pattern="^/komut$"))
+@Maho.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   if event.is_private:
     async for usr in Maho.iter_participants(event.chat_id):
