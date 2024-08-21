@@ -15,11 +15,11 @@ async def start(event):
                        Button.inline("Komutlar", data="komutlar")
                       ],
                       [
-                       Button.url('➕ GRUBUNA EKLE', 'http://t.me/MytGrupBot?startgroup=a'),
+                       Button.url('➕ GRUBUNA EKLE', 'https://t.me/Sohbetikidebir'),
                        Button.url('💬 CHAT', 'https://t.me/S1F1RB1RCHAT')
                       ],
                       [
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Meyit47')
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/GeceBeyYa')
                       ],
                     ),
                     link_preview=False)
@@ -42,7 +42,7 @@ async def handler(event):
                        Button.url('💬 CHAT', 'https://t.me/S1F1RB1RCHAT')
                       ],
                       [
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Meyit47')
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/GeceBeyYa')
                       ],
                     ),
                     link_preview=False)
